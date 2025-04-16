@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logging Out...</title>
+    <script>
+        // Simulating logout by clearing session storage or cookies
+        window.onload = function() {
+            // If you're using sessionStorage or localStorage to store the login state:
+            sessionStorage.clear(); // or localStorage.clear();
+
+            // Optionally, if you use cookies, you can remove them as well
+            // document.cookie = "userLoggedIn=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+            // Redirect to login page after 2 seconds
+            setTimeout(function() {
+                window.location.href = "log.html"; // Ensure this path matches the actual login page
+            }, 2000);
+        };
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Istok Web', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #056663;
+            color: white;
+            text-align: center;
+        }
+
+        .logout-message {
+            background-color: #FFF5EF;
+            color: #056663;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="logout-message">
+        <h2>You have been loged out.</h2>
+    </div>
+</body>
+</html>
