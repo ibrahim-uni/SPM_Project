@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+
+
+    <title>Courses</title>
+    <link rel="stylesheet" href="/CSS/SC-Courses-Styles.css">
+    <link rel="stylesheet" href="/css/profile-card.css">
+
+    
+</head>
+
+<body>
+    <div class="sidebar">
+      <a href=""><img  src="/pics/Üsküdar_Üniversitesi_logo.png"  alt="University Logo"></a>
+
+      
+        
+        <div class="menu-item-first">
+
+          <ul>
+            <li>
+              <a href="SC-Home.html">
+                <i class="fi-br-home"></i>
+                <span class="nav-item">Home</span>
+              </a>
+            </li>  
+
+            <li>
+              <a href="SC-Courses.html" class="courses-sidebar">
+                <i class="fi fi-br-books"></i>
+                <span class="nav-item">Courses</span>
+              </a>
+            
+            </li>
+
+        </ul>
+        </div>
+
+        <div class="menu-item">
+          <ul>
+            <li>
+              <a href="logout.html" >
+                <i class="fi fi-br-exit"></i>
+                <span class="nav-item">Log out</span>
+              </a>
+              
+            </li>  
+          </ul>
+        </div>
+      
+    </div>
+    
+    <div class="main-content">
+
+        <div class="header">
+          <div class="title">
+
+            <div class="left-section">
+              <i class="fi fi-br-angle-double-left" id="btn"></i>
+              <h1>COURSES</h1>  
+            </div>  
+            <div class="right-section">
+              <div class="account-info">
+                <div class="st-name">Kristin</div>
+                <div class="st-number">68547</div>
+              </div>
+              <div class="profile-pic"><i class="fi fi-br-user"></i></div>
+              
+              <div class="profile-card-overlay" id="profileOverlay">
+                <div class="profile-card" id="profileCard">
+                  <div class="profile-card-header">
+                    <div class="header-text">
+                      <div class="profile-name">Kristin</div>
+                      <div class="profile-id">ID: 123456</div>
+                    </div>
+                    <div class="profile-icon">
+                      <i class="fi fi-br-user"></i>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="profile-info">
+                    <div><span class="label">Full Name:</span><br>Kristin Kristin</div>
+                    <div><span class="label">Email:</span><br>kristin@example.com</div>
+                  </div>
+                  <button class="close-btn" id="closeBtn">&times;</button>
+                </div>
+              </div>
+
+            </div> 
+          </div>
+          
+            <div class="filter-bar">
+              <div class="filter-text">Filter by:</div>
+              <div class="dropdown">
+                <div class="select">
+                  <span class="selected">Season</span>
+                  <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                  <li class="activeMenu first">Fall</li>
+                  <li>Summer</li>
+                  <li>Spring</li>
+                  <li class="last">Winter</li>
+                </ul>
+              </div>
+
+              <div class="dropdown dropdown-year">
+                <div class="select select-year">
+                  <span class="selected">Year</span>
+                  <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                  <li class="activeMenu first">2025</li>
+                  <li>2024</li>
+                  <li class="last">2023</li>
+                </ul>
+              </div>
+
+              </div>   
+        </div>
+
+        <div class="content">
+
+          <div class="courses-container">
+           <div class="up-courses-con">
+            <div class="courses-title">Courses</div>
+            <div class="arrow-courses">
+              <a href="Prof-Courses.html"><i class="fi fi-br-arrow-right"></i></a>
+            </div>
+          </div>
+        
+          <div class="courses-grid">
+
+          <div class="course">
+            <div class="header-course">
+              <i class="fi fi-br-book-bookmark"></i>
+              <div class="header-text">
+                <div class="course-code">Code</div>
+                <div class="course-name">course Name</div>
+              </div>
+            </div>
+            <hr class="thick-line">
+
+            <div class="course-content">
+
+              <div class="upcomingCourse-container">
+                <div class="upcoming-course-heading">
+                    <div>
+                      <div class="upcoming-course-text">Upcoming</div>
+                      <div class="makeup-course-text">Make-up exam</div>
+                    </div>
+                    <div class="events-lower-section">
+                      <div class="event-LU">Last updated</div>
+                      <div class="event-DH">DD MMM YYYY - H:MM</div>
+                    </div>
+                </div>
+                <hr class="thick-line">
+                <div class="upcoming-content-course"> 
+                    <div>Lastcall: <span>--/--/--</span></div>
+                    <div>Date: <span>--/--/--</span></div>
+                    <div>Time: <span>--/--</span></div>
+                    <div>Hallway: <span>-----</span></div>
+                </div>
+                </div>
+
+              <div class="course-buttons">
+                <div class="viewList-clicks">
+                  <div class="st-list-button"> 
+                     <div class="button-icon"><i class="fi fi-br-file-circle-info"></i></div>
+                    <div class="list-button-text">Students list</div>
+                  </div>
+                  <div class="makeup-list-button">
+                    <div class="button-icon"><i class="fi fi-br-file-circle-info"></i></div>
+                    <div class="list-button-text">Make-up list</div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="header-course">
+              <i class="fi fi-br-book-bookmark"></i>
+              <div class="header-text">
+                <div class="course-code">Code</div>
+                <div class="course-name">course Name</div>
+              </div>
+            </div>
+            <hr class="thick-line">
+
+            <div class="course-content">
+
+              <div class="upcomingCourse-container">
+                <div class="upcoming-course-heading">
+                    <div>
+                      <div class="upcoming-course-text">Upcoming</div>
+                      <div class="makeup-course-text">Make-up exam</div>
+                    </div>
+                    <div class="events-lower-section">
+                      <div class="event-LU">Last updated</div>
+                      <div class="event-DH">DD MMM YYYY - H:MM</div>
+                    </div>
+                </div>
+                <hr class="thick-line">
+                <div class="upcoming-content-course"> 
+                    <div>Lastcall: <span>--/--/--</span></div>
+                    <div>Date: <span>--/--/--</span></div>
+                    <div>Time: <span>--/--</span></div>
+                    <div>Hallway: <span>-----</span></div>
+                </div>
+                </div>
+
+              <div class="course-buttons">
+                <div class="viewList-clicks">
+                  <div class="st-list-button"> 
+                     <div class="button-icon"><i class="fi fi-br-file-circle-info"></i></div>
+                    <div class="list-button-text">Students list</div>
+                  </div>
+                  <div class="makeup-list-button">
+                    <div class="button-icon"><i class="fi fi-br-file-circle-info"></i></div>
+                    <div class="list-button-text">Make-up list</div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="header-course">
+              <i class="fi fi-br-book-bookmark"></i>
+              <div class="header-text">
+                <div class="course-code">Code</div>
+                <div class="course-name">course Name</div>
+              </div>
+            </div>
+            <hr class="thick-line">
+
+            <div class="course-content">
+
+              <div class="upcomingCourse-container">
+                <div class="upcoming-course-heading">
+                    <div>
+                      <div class="upcoming-course-text">Upcoming</div>
+                      <div class="makeup-course-text">Make-up exam</div>
+                    </div>
+                    <div class="events-lower-section">
+                      <div class="event-LU">Last updated</div>
+                      <div class="event-DH">DD MMM YYYY - H:MM</div>
+                    </div>
+                </div>
+                <hr class="thick-line">
+                <div class="upcoming-content-course"> 
+                    <div>Lastcall: <span>--/--/--</span></div>
+                    <div>Date: <span>--/--/--</span></div>
+                    <div>Time: <span>--/--</span></div>
+                    <div>Hallway: <span>-----</span></div>
+                </div>
+                </div>
+
+              <div class="course-buttons">
+                <div class="viewList-clicks">
+                  <div class="st-list-button"> 
+                     <div class="button-icon"><i class="fi fi-br-file-circle-info"></i></div>
+                    <div class="list-button-text">Students list</div>
+                  </div>
+                  <div class="makeup-list-button">
+                    <div class="button-icon"><i class="fi fi-br-file-circle-info"></i></div>
+                    <div class="list-button-text">Make-up list</div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="header-course">
+              <i class="fi fi-br-book-bookmark"></i>
+              <div class="header-text">
+                <div class="course-code">Code</div>
+                <div class="course-name">course Name</div>
+              </div>
+            </div>
+            <hr class="thick-line">
+
+            <div class="course-content">
+
+              <div class="upcomingCourse-container">
+                <div class="upcoming-course-heading">
+                    <div>
+                      <div class="upcoming-course-text">Upcoming</div>
+                      <div class="makeup-course-text">Make-up exam</div>
+                    </div>
+                    <div class="events-lower-section">
+                      <div class="event-LU">Last updated</div>
+                      <div class="event-DH">DD MMM YYYY - H:MM</div>
+                    </div>
+                </div>
+                <hr class="thick-line">
+                <div class="upcoming-content-course"> 
+                    <div>Lastcall: <span>--/--/--</span></div>
+                    <div>Date: <span>--/--/--</span></div>
+                    <div>Time: <span>--/--</span></div>
+                    <div>Hallway: <span>-----</span></div>
+                </div>
+                </div>
+
+              <div class="course-buttons">
+                <div class="viewList-clicks">
+                  <div class="st-list-button"> 
+                     <div class="button-icon"><i class="fi fi-br-file-circle-info"></i></div>
+                    <div class="list-button-text">Students list</div>
+                  </div>
+                  <div class="makeup-list-button">
+                    <div class="button-icon"><i class="fi fi-br-file-circle-info"></i></div>
+                    <div class="list-button-text">Make-up list</div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="header-course">
+              <i class="fi fi-br-book-bookmark"></i>
+              <div class="header-text">
+                <div class="course-code">Code</div>
+                <div class="course-name">course Name</div>
+              </div>
+            </div>
+            <hr class="thick-line">
+
+            <div class="course-content">
+
+              <div class="upcomingCourse-container">
+                <div class="upcoming-course-heading">
+                    <div>
+                      <div class="upcoming-course-text">Upcoming</div>
+                      <div class="makeup-course-text">Make-up exam</div>
+                    </div>
+                    <div class="events-lower-section">
+                      <div class="event-LU">Last updated</div>
+                      <div class="event-DH">DD MMM YYYY - H:MM</div>
+                    </div>
+                </div>
+                <hr class="thick-line">
+                <div class="upcoming-content-course"> 
+                    <div>Lastcall: <span>--/--/--</span></div>
+                    <div>Date: <span>--/--/--</span></div>
+                    <div>Time: <span>--/--</span></div>
+                    <div>Hallway: <span>-----</span></div>
+                </div>
+                </div>
+
+              <div class="course-buttons">
+                <div class="viewList-clicks">
+                  <div class="st-list-button"> 
+                     <div class="button-icon"><i class="fi fi-br-file-circle-info"></i></div>
+                    <div class="list-button-text">Students list</div>
+                  </div>
+                  <div class="makeup-list-button">
+                    <div class="button-icon"><i class="fi fi-br-file-circle-info"></i></div>
+                    <div class="list-button-text">Make-up list</div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="header-course">
+              <i class="fi fi-br-book-bookmark"></i>
+              <div class="header-text">
+                <div class="course-code">Code</div>
+                <div class="course-name">course Name</div>
+              </div>
+            </div>
+            <hr class="thick-line">
+
+            <div class="course-content">
+
+              <div class="upcomingCourse-container">
+                <div class="upcoming-course-heading">
+                    <div>
+                      <div class="upcoming-course-text">Upcoming</div>
+                      <div class="makeup-course-text">Make-up exam</div>
+                    </div>
+                    <div class="events-lower-section">
+                      <div class="event-LU">Last updated</div>
+                      <div class="event-DH">DD MMM YYYY - H:MM</div>
+                    </div>
+                </div>
+                <hr class="thick-line">
+                <div class="upcoming-content-course"> 
+                    <div>Lastcall: <span>--/--/--</span></div>
+                    <div>Date: <span>--/--/--</span></div>
+                    <div>Time: <span>--/--</span></div>
+                    <div>Hallway: <span>-----</span></div>
+                </div>
+                </div>
+
+              <div class="course-buttons">
+                <div class="viewList-clicks">
+                  <div class="st-list-button"> 
+                     <div class="button-icon"><i class="fi fi-br-file-circle-info"></i></div>
+                    <div class="list-button-text">Students list</div>
+                  </div>
+                  <div class="makeup-list-button">
+                    <div class="button-icon"><i class="fi fi-br-file-circle-info"></i></div>
+                    <div class="list-button-text">Make-up list</div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+         </div>
+
+
+         </div>
+
+
+         <script src="/js/profile-card.js"></script>
+</body>
+<script src="/js/SC-Courses-Scripts.js"></script>
+</html>
