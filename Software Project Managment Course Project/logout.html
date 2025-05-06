@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logging Out...</title>
+    <script>
+        // Redirect to Home Page after 2 seconds
+        setTimeout(function() {
+            window.location.href = "log.html"; // Change "home.html" to your actual home page URL
+        }, 1000);
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Istok Web', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #056663;
+            color: white;
+            text-align: center;
+        }
+
+        .logout-message {
+            background-color: #FFF5EF;
+            color: #056663;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        }
+        .logout-message h2{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logout-message">
+        <h2>You have been logged out.</h2>
+        <p>Redirecting...</p>
+    </div>
+</body>
+</html>

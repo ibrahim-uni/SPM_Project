@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+
+
+    <title>Courses</title>
+    <link rel="stylesheet" href="CSS/St-Courses-Styles.css">
+    
+</head>
+
+<body>
+    <div class="sidebar">
+      <a href=""><img  src="pics/Üsküdar_Üniversitesi_logo.png"  alt="University Logo"></a>
+
+      
+        
+        <div class="menu-item-first">
+
+          <ul>
+            <li>
+              <a href="St-Home.html">
+                <i class="fi-br-home"></i>
+                <span class="nav-item">Home</span>
+              </a>
+            </li>  
+
+            <li>
+              <a href="St-Courses.html" class="courses-sidebar">
+                <i class="fi fi-br-books"></i>
+                <span class="nav-item">Courses</span>
+              </a>
+            
+            </li>
+
+        </ul>
+        </div>
+
+        <div class="menu-item">
+          <ul>
+            <li>
+              <a href="logout.html" >
+                <i class="fi fi-br-exit"></i>
+                <span class="nav-item">Log out</span>
+              </a>
+              
+            </li>  
+          </ul>
+        </div>
+      
+    </div>
+    
+    <div class="main-content">
+
+        <div class="header">
+          <div class="title">
+
+            <div class="left-section">
+              <i class="fi fi-br-angle-double-left" id="btn"></i>
+              <h1>COURSES</h1>  
+            </div>
+            
+            <div class="right-section">
+              <div class="notification"><i class="fi fi-br-bell"></i></div>
+              <div class="account-info">
+                <div class="st-name">Baraa</div>
+                <div class="st-number">09996</div>
+              </div>
+              <div class="profile-pic"><i class="fi fi-br-user"></i></div>
+            </div>
+            
+          </div>
+          
+            <div class="filter-bar">
+
+              <div class="filter-text">Filter by:</div>
+              <div class="dropdown">
+                <div class="select">
+                  <span class="selected">Season</span>
+                  <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                  <li class="activeMenu first">Fall</li>
+                  <li>Summer</li>
+                  <li>Spring</li>
+                  <li class="last">Winter</li>
+                </ul>
+              </div>
+
+              <div class="dropdown dropdown-year">
+                <div class="select select-year">
+                  <span class="selected">Year</span>
+                  <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                  <li class="activeMenu first">2025</li>
+                  <li>2024</li>
+                  <li class="last">2023</li>
+                </ul>
+              </div>
+              <div class="filter-bar-right">
+                <div class="search-bar">
+                  <input type="text" placeholder="type here..." >
+                  <i class="fi fi-br-search"></i>
+                </div>
+              <div class="display" id="dis"><i class="fi fi-br-dropdown-bar" id="toggle-icon"></i>
+              </div>
+              </div>
+              
+          
+            </div>
+
+        
+        <div class="courses-con" id="courses-container">
+          
+            <div class="course">
+              
+              <div class="course-info">
+                <div class="cour-upper-part">
+
+                  <div class="cour-left">
+                <div class="course-code">SE101</div>
+                <div class="course-info-right">
+                  <div class="course-name">Software Project Managment</div>
+                  <div class="course-prof">Prof. Kristin</div>
+                 </div>
+                </div>
+                <div class="cour-result-FF"><span class="bigLetter">F</span><span class="smallLetter">F</span></div>
+              </div>
+
+              <div class="cour-bottom-part-FF">
+                <div class="info-button"><i class="fi fi-br-file-circle-info"></i>
+                </div>
+                <button>Makeup Detials</button>
+              </div>
+              </div>
+            </div>
+            
+
+
+            <div class="course">
+              
+              <div class="course-info">
+                <div class="cour-upper-part">
+
+                  <div class="cour-left">
+                <div class="course-code">SE101</div>
+                <div class="course-info-right">
+                  <div class="course-name">Software Project Managment</div>
+                  <div class="course-prof">Prof. Kristin</div>
+                 </div>
+                </div>
+                <div class="cour-result-DC"><span class="bigLetter">D</span><span class="smallLetter">C</span></div>
+              </div>
+
+              <div class="cour-bottom-part-DC">
+                <div class="info-button"><i class="fi fi-br-file-circle-info"></i>
+                </div>
+                <button id="requestMakeupBtn">Request Makeup</button>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="course">
+              
+              <div class="course-info">
+                <div class="cour-upper-part">
+
+                  <div class="cour-left">
+                <div class="course-code">SE101</div>
+                <div class="course-info-right">
+                  <div class="course-name">Software Project Managment</div>
+                  <div class="course-prof">Prof. Kristin</div>
+                 </div>
+                </div>
+                <div class="cour-result-AA"><span class="bigLetter">A</span><span class="smallLetter">A</span></div>
+              </div>
+
+              <div class="cour-bottom-part-AA">
+                <button>Course Detials</button>
+              </div>
+              </div>
+
+            </div>
+
+            <!--popup of course detials-->
+            <div id="coursePopup" class="popup-overlay">
+              <div class="popup-content">
+                <span class="close-popup">&times;</span>
+                <h2>Course Details</h2>
+                <p>Here you can display detailed information about the course like syllabus, materials, grades, etc.</p>
+              </div>
+            </div>
+            
+
+
+            <div class="course">
+              
+              <div class="course-info">
+                <div class="cour-upper-part">
+
+                  <div class="cour-left">
+                <div class="course-code">SE101</div>
+                <div class="course-info-right">
+                  <div class="course-name">Software Project Managment</div>
+                  <div class="course-prof">Prof. Kristin</div>
+                 </div>
+                </div>
+                <div class="cour-result-FF"><span class="bigLetter">F</span><span class="smallLetter">F</span></div>
+              </div>
+
+              <div class="cour-bottom-part-FF">
+                <div class="info-button"><i class="fi fi-br-file-circle-info"></i>
+                </div>
+                <button>Makeup Details</button>
+              </div>
+              </div>
+
+            </div>
+
+
+            <div class="course">
+              
+              <div class="course-info">
+                <div class="cour-upper-part">
+
+                  <div class="cour-left">
+                <div class="course-code">SE101</div>
+                <div class="course-info-right">
+                  <div class="course-name">Software Project Managment</div>
+                  <div class="course-prof">Prof. Kristin</div>
+                 </div>
+                </div>
+                <div class="cour-result-AA"><span class="bigLetter">A</span><span class="smallLetter">A</span></div>
+              </div>
+
+              <div class="cour-bottom-part-AA">
+                <button>Course Detials</button>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="course">
+              
+              <div class="course-info">
+                <div class="cour-upper-part">
+
+                  <div class="cour-left">
+                <div class="course-code">SE101</div>
+                <div class="course-info-right">
+                  <div class="course-name">Software Project Managment</div>
+                  <div class="course-prof">Prof. Kristin</div>
+                 </div>
+                </div>
+                <div class="cour-result-AA"><span class="bigLetter">A</span><span class="smallLetter">A</span></div>
+              </div>
+
+              <div class="cour-bottom-part-AA">
+                <button>Course Detials</button>
+              </div>
+              </div>
+
+            </div>
+              
+
+        </div>
+        
+        <div class="courses-listed">
+          <div class="course-info-listed">
+            <div class="leftSide-listed">
+              <div class="book-icon"><i class="fi fi-br-book-bookmark"></i></div>
+              <div class="course-code-listed">SE101</div>
+              <div class="course-name-listed">Software Project Managment</div>
+              <div class="course-prof">Prof. Kristin</div>
+            </div>
+
+            <div class="rightSide-listed">
+              <div class="perc">20%</div>
+              <div class="cour-result-FF"><span class="bigLetter-l">F</span><span class="smallLetter-l">F</span></div>
+              <div class="button-ff-listed">Make-up Details</div>
+            </div>
+          </div>
+
+          <div class="course-info-listed">
+                  <div class="leftSide-listed">
+                    <div class="book-icon"><i class="fi fi-br-book-bookmark"></i></div>
+                    <div class="course-code-listed">SE101</div>
+                    <div class="course-name-listed">Software Project Managment</div>
+                    <div class="course-prof">Prof. Kristin</div>
+                  </div>
+
+                  <div class="rightSide-listed">
+                    <div class="perc">50%</div>
+                    <div class="cour-result-DC"><span class="bigLetter-l">D</span><span class="smallLetter-l">C</span></div>
+                    <div class="button-DC-listed" id="requestMakeupBtn">Request Make-up</div>
+                  </div>
+            </div>
+
+
+            <div class="course-info-listed">
+              <div class="leftSide-listed">
+                <div class="book-icon"><i class="fi fi-br-book-bookmark"></i></div>
+                <div class="course-code-listed">SE101</div>
+                <div class="course-name-listed">Software Project Managment</div>
+                <div class="course-prof">Prof. Kristin</div>
+              </div>
+
+              <div class="rightSide-listed">
+                <div class="perc">100%</div>
+                <div class="cour-result-AA"><span class="bigLetter-l">A</span><span class="smallLetter-l">A</span></div>
+                <div class="button-AA-listed">Course Details</div>
+              </div>
+            </div>
+
+
+            <div class="course-info-listed">
+              <div class="leftSide-listed">
+                <div class="book-icon"><i class="fi fi-br-book-bookmark"></i></div>
+                <div class="course-code-listed">SE101</div>
+                <div class="course-name-listed">Software Project Managment</div>
+                <div class="course-prof">Prof. Kristin</div>
+              </div>
+
+              <div class="rightSide-listed">
+                <div class="perc">20%</div>
+                <div class="cour-result-FF"><span class="bigLetter-l">F</span><span class="smallLetter-l">F</span></div>
+                <div class="button-ff-listed">Make-up Details</div>
+              </div>
+            </div>
+
+
+            <div class="course-info-listed">
+              <div class="leftSide-listed">
+                <div class="book-icon"><i class="fi fi-br-book-bookmark"></i></div>
+                <div class="course-code-listed">SE101</div>
+                <div class="course-name-listed">Software Project Managment</div>
+                <div class="course-prof">Prof. Kristin</div>
+              </div>
+
+              <div class="rightSide-listed">
+                <div class="perc">100%</div>
+                <div class="cour-result-AA"><span class="bigLetter-l">A</span><span class="smallLetter-l">A</span></div>
+                <div class="button-AA-listed">Course Details</div>
+              </div>
+            </div>
+
+
+            <div class="course-info-listed">
+              <div class="leftSide-listed">
+                <div class="book-icon"><i class="fi fi-br-book-bookmark"></i></div>
+                <div class="course-code-listed">SE101</div>
+                <div class="course-name-listed">Software Project Managment</div>
+                <div class="course-prof">Prof. Kristin</div>
+              </div>
+
+              <div class="rightSide-listed">
+                <div class="perc">100%</div>
+                <div class="cour-result-AA"><span class="bigLetter-l">A</span><span class="smallLetter-l">A</span></div>
+                <div class="button-AA-listed">Course Details</div>
+              </div>
+           </div>
+
+          </div>
+
+
+    <!-- Popup Overlay -->
+    <div id="popupOverlay" class="popup-overlay">
+      <div class="popup-box">
+        <!-- You can style this part as you like -->
+        <div class="popUP-upper">
+          <div class="up-left-popup">
+            <div class="course-code-popup">SE101</div>
+            <div class="course-name-popup">Software Project Managment</div>
+            <div class="course-prof-popup">Prof. Kristin</div>
+          </div>
+          <div class="up-right-popup">
+            <div>Credits: 4</div>
+            <div>ECTS: 6</div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="popUp-Mid">
+
+          <div class="mid-lists">
+            <div class="mid-left" >Final exam marks</div>
+              <div class="mid-right">
+              <div class="mid-letters">DC</div>
+                <div class="mid-perc">55</div>
+          </div>
+          </div>
+
+          <div class="mid-lists">
+            <div class="mid-left" >Overall Average</div>
+            <div class="mid-right">
+              <div class="mid-letters">DC</div>
+              <div class="mid-perc">55</div>
+            </div>
+          </div>
+        
+        </div>
+
+
+
+        <div class="popUp-lower">
+          <div class="lower-heading">
+            <div>
+              <div class="first-title">Upcoming</div>
+            <div class="second-title">Make-up exam</div>
+            </div>
+            <div class="update-date">
+              <div class="updated-date-text">Last updated</div>
+              <div class="updated-realDate">12 Apr 2025 - 12:12</div>
+            </div>
+          </div>
+          <hr>
+          <div class="lower-details">
+            <div>Lastcall: <span>--/--/--</span></div>
+            <div>Date: <span>--/--/--</span></div>
+            <div>Time: <span>--/--</span></div>
+            <div>Hallway: <span>-----</span></div>
+          </div>
+        </div>
+        <div><button id="confirmRequestBtn">Request Make-up</button></div>
+        
+      </div>
+    </div>
+
+
+
+<!-- Confirmation Popup -->
+<div id="confirmPopup" class="popup-overlay" style="display: none;">
+  <div class="popup-box-conf">
+    <div class="title-confPopup">Make-up request confirmation</div>
+    <div class="question-conf">Are you sure you want to re-take the exam?</div>
+    <div class="note">Note: The exam new points will be assigned even if</div>
+    <div class="note">it was less than the old points. </div>
+    <div class="conf-buttons">
+      <button id="confirmNo">Cancel</button>
+      <button id="confirmYes">Confirm</button>
+    </div>
+  </div>
+</div>
+
+<!-- Final Confirmation Popup -->
+<div id="finalPopup" class="popup-overlay" style="display: none;">
+  <div class="popup-box-conf">
+    <div class="heading-confirmed-exam">Make-up exam confirmed</div>
+    <div class="inform">You will be inform from the course</div>
+    <div class="inform">inscructor for the exam detials.</div>
+    <div class="done-sign"><i class="fi fi-sr-checkbox"></i></div>
+  </div>
+</div>
+
+
+
+</body>
+<!-- <script src="coursesScripts.js"></script>-->
+<script src="JavaSript/St-Courses-Scripts.js"></script>
+</html>

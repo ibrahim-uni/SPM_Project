@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/Prof-Course1-Styles.css">
+    <link rel="stylesheet" href="/CSS/Prof-Profile-Style.css">
+    <title>Course 3</title>
+    
+    
+</head>
+
+<body>
+
+    <div class="sidebar">
+      <a href=""><img  src="/pics/Üsküdar_Üniversitesi_logo.png"  alt="University Logo"></a>
+
+        <div class="menu-item-first">
+          <ul>
+            <li>
+              <a href="Prof-Home.html" class="home-sidebar">
+                <i class="fi-br-home"></i>
+                <span class="nav-item">Home</span>
+              </a>
+            </li>  
+
+            <li>
+              <a href="Prof-Courses.html">
+                <i class="fi fi-br-books"></i>
+                <span class="nav-item">Courses</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="menu-item">
+          <ul>
+            <li>
+              <a href="/logout.html" >
+                <i class="fi fi-br-exit"></i>
+                <span class="nav-item">Log out</span>
+              </a>
+            </li>  
+          </ul>
+        </div>
+    </div>
+
+
+
+
+    
+    <div class="main-content">
+
+        <div class="header">
+
+          <div class="title">
+            <div class="left-section">
+              <i class="fi fi-br-angle-double-left" id="btn"></i>
+              <h1>Code</h1> 
+              <h2>Course name</h2> 
+            </div>
+            
+            <div class="right-section">
+              <div class="account-info">
+                <div class="user-name"></div>
+                <div class="user-number"></div>
+              </div>
+
+              <div class="profile-pic"><i class="fi fi-br-user"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!--Profile-->
+        <div id="profileModal" class="profile-modal" style="display:none;">
+          <div class="profile-card">
+            <div class="heading-profileCard">
+              <div id="profileName"></div>
+              <div class="profileId-div">ID:<span id="profileId"></span></div>
+            </div>
+            <hr class="thick-line">
+            <div class="profile-content-up">
+              <div>Full Name:</div>
+              <div id="profileFullName"></div>
+              <div>Email:</div>
+              <div id="profileEmail"></div>
+            </div>
+            <div class="stats-container">
+              <div class="stat">
+                <h1 id="profileStudents">1056</h1>
+                <p>Students<br>Graduated</p>
+              </div>
+              <div class="divider"></div>
+              <div class="stat">
+                <h1 id="profileExperience">5</h1>
+                <p>Years of<br>Experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <div class="content">
+
+        <div class="courses-container">
+
+          <div class="Course-NSCE">
+            <div class="First-course-NSCE">
+              <div>Faculty: Software engineering</div>
+              <div>Credits: 4</div>
+            </div>
+            <div class="Second-course-NSCE">
+              <div>Semester: Spring Semester</div>
+              <div>ECTS: 6</div>
+            </div>
+          </div>
+        <hr class="thick-line">
+
+        <div class="No-Enrolled">
+          <div class="text-Enrolled">Total Students Enrolled:</div>
+          <div class="No-st">-- Students</div>
+        </div>
+        <div class="Overall-average">
+          <div class="text-average">Overall Average:</div>
+          <div class="No-average">--%</div>
+        </div>
+
+        <div class="Grade-entry-title">Grade entry:</div>
+        <hr class="thick-line">
+
+        <div class="grade-entry-buttons">
+          <button class="upload-button">Upload Grades</button>
+          <button class="generate-button">Generate</button>
+        </div>
+
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Student ID:</th>
+                <th>Name:</th>
+                <th>Letter:</th>
+                <th>Final:</th>
+                <th>Make-up:</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+              <!-- JS will populate this -->
+            </tbody>
+          </table>
+        </div>
+        <hr class="thick-line">
+        <div class="lower-part">
+          <button>File name</button>
+          <div class="sumbit-button">
+            Submit
+            <i class="fi fi-br-disk"></i>
+          </div>
+        </div>
+
+      </div>
+
+    <div class="content-RS">
+
+      <div class="upcoming-container">
+        <div class="upcoming-heading">
+            <div>
+              <div class="upcoming-text">Upcoming</div>
+              <div class="makeup-text">Make-up exam</div>
+            </div>
+            <div class="events-lower-section">
+              <div class="event-LU">Last updated</div>
+              <div class="event-DH">DD MMM YYYY - H:MM</div>
+            </div>
+        </div>
+        <hr class="thick-line">
+        <div class="upcoming-content"> 
+            <div>Lastcall: <span>--/--/--</span></div>
+            <div>Date: <span>--/--/--</span></div>
+            <div>Time: <span>--/--</span></div>
+            <div>Hallway: <span>-----</span></div>
+        </div>
+        </div>
+
+        <div class="viewList-container">
+          <div class="viewList-heading">View Lists:</div>
+          <hr class="thick-line">
+          <div class="viewList-clicks">
+            <div class="st-list-button"> 
+               <div class="button-icon"><i class="fi fi-br-file-circle-info"></i></div>
+              <div class="list-button-text">Students list</div>
+            </div>
+            <div class="makeup-list-button">
+              <div class="button-icon"><i class="fi fi-br-file-circle-info"></i></div>
+              <div class="list-button-text">Make-up list</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="activityLog-container">
+          <div class="activityLog-heading"> 
+              <div class="activityLog-text">Activity Log</div>
+              <div class="events-lower-section">
+                <div class="event-LU">Last updated</div>
+                <div class="event-DH">DD MMM YYYY - H:MM</div>
+              </div>
+          </div>
+          <hr class="thick-line">
+          <div class="activityLog-content"> 
+              <div class="activity">
+                <div>
+                  <div class="activity-name">Make-up Exam grades</div>
+                  <div class="activity-DT">12 Apr 2025 - 12:12</div>
+                </div>
+              <div class="activity-download"><i class="fi fi-br-download"></i></div>
+            </div>
+
+              <div class="activity">
+                <div>
+                  <div class="activity-name">Make-up Exam grades</div>
+                  <div class="activity-DT">12 Apr 2025 - 12:12</div>
+                </div>
+              <div class="activity-download"><i class="fi fi-br-download"></i></div>
+            </div>
+
+            <div class="activity">
+              <div>
+                <div class="activity-name">Make-up Exam grades</div>
+                <div class="activity-DT">12 Apr 2025 - 12:12</div>
+              </div>
+            <div class="activity-download"><i class="fi fi-br-download"></i></div>
+          </div>
+
+          <div class="activity">
+            <div>
+              <div class="activity-name">Make-up Exam grades</div>
+              <div class="activity-DT">12 Apr 2025 - 12:12</div>
+            </div>
+          <div class="activity-download"><i class="fi fi-br-download"></i></div>
+        </div>
+        
+        </div>
+        </div>
+      </div>
+        
+      </div>
+    </div> 
+
+
+        
+</body>
+<script src="/JavaSript/Prof-Course1-Scripts.js"></script>
+<script src="/JavaSript/Prof-profile-Scripts.js"></script>
+</html>

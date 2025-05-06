@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Istok Web', sans-serif;
+    }
+
+    body {
+      background-color: #FFF5EF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+
+    .container {
+      width: 950px;
+      height: 600px;
+      display: flex;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0.5, 0.5, 0.2);
+      border: 5px solid #056663; /* Added border around the container */
+    }
+
+    .left-box {
+      width: 50%;
+      background-color: white;
+      padding: 40px 30px;
+      padding-bottom: 100px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 0.5em 1em rgba(0, 0, 0,0.2);
+    }
+
+    .left-box h1 {
+      color: #056663;
+      font-size: 45px;
+      margin-bottom: 40px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      background-color: #FFEDE5;
+      font-size: 14px;
+      outline: none;
+    }
+
+    input::placeholder {
+      color: #bbb;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #2AC1B9;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #25a6a0;
+    }
+
+    .right-box {
+      width: 50%;
+      background: #056663;
+      color: white;
+      position: relative;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 100px;
+    
+    }
+
+    .right-box img {
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+      margin-bottom: 25px;
+    }
+
+    .right-box h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .right-box p {
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.5;
+      max-width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-box">
+      <h1>Welcome</h1>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Identification Number" required />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" required />
+        </div>
+        <button type="submit" >Sign-in</button>
+      </form>
+    </div>
+    <div class="right-box">
+      <img src="pics/Üsküdar_Üniversitesi_logo.png" alt="University Logo" />
+      <h2>Üsküdar Üniversitesi</h2>
+      <p>Welcome to Üsküdar Üniversitesi</p>
+    </div>
+  </div>
+</body>
+<script>
+  function goToCourses() {
+  window.location.href = "homePage.html";
+}
+</script>
+</html>
