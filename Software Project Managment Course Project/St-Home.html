@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
 
     <title>Home</title>
     <link rel="stylesheet" href="CSS/St-Home-Style.css">
+    <link rel="stylesheet" href="CSS/St-Profile-Style.css">
     
 </head>
 
@@ -64,11 +66,11 @@
             
             <div class="right-section">
 
-              <div class="notification"><i class="fi fi-br-bell"></i></div>
+             
 
               <div class="account-info">
-                <div class="st-name">Baraa</div>
-                <div class="st-number">09996</div>
+                <div class="user-name"></div>
+                <div class="user-number"></div>
               </div>
 
               <div class="profile-pic"><i class="fi fi-br-user"></i></div>
@@ -77,6 +79,35 @@
             
           </div>
         </div>
+
+
+        <!--Profile-->
+        <div id="profileModal" class="profile-modal" style="display:none;">
+          <div class="profile-card">
+            <div class="heading-profileCard">
+              <div id="profileName"></div>
+              <div class="profileId-div">ID:<span id="profileId"></span></div>
+            </div>
+            <hr class="thick-line">
+            <div class="profile-content-up">
+              <div>Full Name:</div>
+              <div id="profileFullName"></div>
+              <div>Email:</div>
+              <div id="profileEmail"></div>
+            </div>
+            <div class="GPA-container">
+              <div class="GPA-text">GPA</div>
+              <div id="profileGPA"></div>
+            </div>
+            <div class="adv-container">
+              <div class="adv-name">Advisor: <span id="profileAdvName"></span></div>
+              <div class="adv-email">Email: <span id="profileAdvEmail"></span></div>
+            </div>
+          </div>
+        </div>
+
+
+
 
        <div class="content">
 
@@ -89,8 +120,8 @@
         </div>
         <hr class="thick-line">
 
-        <div class="courses">
-          <div class="course">
+        <div class="courses" >
+          <div class="course" id="showPopupBtn">
               <div class="cour-upper-part">
                 <div class="cour-left">
                   <div class="course-code">SE101</div>
@@ -102,15 +133,12 @@
                 </div>
             </div>
             <div class="cour-bottom-part-FF">
-              <div class="info-button">
-                <i class="fi fi-br-file-circle-info"></i>
-              </div>
               <button>Makeup Detials</button>
             </div>
           </div>
 
-          <div class="course">
-            <div class="cour-upper-part">
+          <div class="course" >
+            <div class="cour-upper-part" id="requestMakeupBtn">
               <div class="cour-left">
                 <div class="course-code">SE101</div>
                 <div class="course-name">Software Project Managment</div>
@@ -121,14 +149,11 @@
               </div>
           </div>
           <div class="cour-bottom-part-DC">
-            <div class="info-button">
-              <i class="fi fi-br-file-circle-info"></i>
-            </div>
-            <button>Request Makeup</button>
+            <button id="confirmRequestBtn">Request Makeup</button>
           </div>
         </div>
 
-        <div class="course">
+        <div class="course" id="showPopupBtn3">
           <div class="cour-upper-part">
             <div class="cour-left">
               <div class="course-code">SE101</div>
@@ -140,12 +165,12 @@
             </div>
         </div>
         <div class="cour-bottom-part-AA">
-          <button>Course details</button>
+          <button>No Make-up</button>
         </div>
       </div>
 
       <div class="last-course-formore">
-        <div class="last-course">
+        <div class="last-course" id="showPopupBtn4">
         <div class="cour-upper-part">
           <div class="cour-left">
             <div class="course-code">SE101</div>
@@ -158,9 +183,6 @@
           </div>
          </div>
         <div class="last-cour-bottom-part-FF">
-          <div class="info-button">
-            <i class="fi fi-br-file-circle-info"></i>
-          </div>
           <button>Makeup Detials</button>
         </div>
         </div>
@@ -175,6 +197,256 @@
 
         </div>
       </div>
+
+
+
+            <!-- Popup Overlay -->
+          <div id="popupOverlay" class="popup-overlay">
+            <div class="popup-box">
+              <!-- You can style this part as you like -->
+              <div class="popUP-upper">
+                <div class="up-left-popup">
+                  <div class="course-code-popup">SE101</div>
+                  <div class="course-name-popup">Software Project Managment</div>
+                  <div class="course-prof-popup">Prof. Kristin</div>
+                </div>
+                <div class="up-right-popup">
+                  <div>Credits: 4</div>
+                  <div>ECTS: 6</div>
+                </div>
+              </div>
+              <hr>
+
+              <div class="popUp-Mid">
+
+                <div class="mid-lists">
+                  <div class="mid-left" >Final exam marks</div>
+                    <div class="mid-right">
+                    <div class="mid-letters">DC</div>
+                      <div class="mid-perc">55</div>
+                </div>
+                </div>
+
+                <div class="mid-lists">
+                  <div class="mid-left" >Overall Average</div>
+                  <div class="mid-right">
+                    <div class="mid-letters">DC</div>
+                    <div class="mid-perc">55</div>
+                  </div>
+                </div>
+              
+              </div>
+
+
+
+              <div class="popUp-lower">
+                <div class="lower-heading">
+                  <div>
+                    <div class="first-title">Upcoming</div>
+                  <div class="second-title">Make-up exam</div>
+                  </div>
+                  <div class="update-date">
+                    <div class="updated-date-text">Last updated</div>
+                    <div class="updated-realDate">12 Apr 2025 - 12:12</div>
+                  </div>
+                </div>
+                <hr>
+                <div class="lower-details">
+                  <div>Lastcall: <span>--/--/--</span></div>
+                  <div>Date: <span>--/--/--</span></div>
+                  <div>Time: <span>--/--</span></div>
+                  <div>Hallway: <span>-----</span></div>
+                </div>
+              </div>
+              <button id="confirmRequestBtn-popup">Request Make-up</button>
+              
+            </div>
+          </div>
+
+
+
+      <!-- Confirmation Popup -->
+      <div id="confirmPopup" class="popup-overlay" style="display: none;">
+        <div class="popup-box-conf">
+          <div class="title-confPopup">Make-up request confirmation</div>
+          <div class="question-conf">Are you sure you want to re-take the exam?</div>
+          <div class="note">Note: The exam new points will be assigned even if</div>
+          <div class="note">it was less than the old points. </div>
+          <div class="conf-buttons">
+            <button id="confirmNo">Cancel</button>
+            <button id="confirmYes">Confirm</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final Confirmation Popup -->
+      <div id="finalPopup" class="popup-overlay" style="display: none;">
+        <div class="popup-box-conf">
+          <div class="heading-confirmed-exam">Make-up exam confirmed</div>
+          <div class="inform">You will be inform from the course</div>
+          <div class="inform">inscructor for the exam detials.</div>
+          <div class="done-sign"><i class="fi fi-sr-checkbox"></i></div>
+        </div>
+      </div>
+
+
+
+      <!-- Popup Overlay1111 -->
+      <div id="popupOverlay1" class="popup-overlay" style="display: none;">
+        <div class="popup-box">
+          <!-- You can style this part as you like -->
+          <div class="popUP-upper">
+            <div class="up-left-popup">
+              <div class="course-code-popup">SE101</div>
+              <div class="course-name-popup">Software Project Managment</div>
+              <div class="course-prof-popup">Prof. Kristin</div>
+            </div>
+            <div class="up-right-popup">
+              <div>Credits: 4</div>
+              <div>ECTS: 6</div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="popUp-Mid">
+
+            <div class="mid-lists">
+              <div class="mid-left" >Final exam marks</div>
+                <div class="mid-right">
+                <div class="mid-letters">--</div>
+                  <div class="mid-perc">--</div>
+            </div>
+            </div>
+
+            <div class="mid-lists">
+              <div class="mid-left" >Overall Average</div>
+              <div class="mid-right">
+                <div class="mid-letters">--</div>
+                <div class="mid-perc">--</div>
+              </div>
+            </div>
+          
+        </div>
+
+
+
+          <div class="popUp-lower">
+            <div class="lower-heading">
+              <div>
+                <div class="first-title">Upcoming</div>
+              <div class="second-title">Make-up exam</div>
+              </div>
+              <div class="update-date">
+                <div class="updated-date-text">Last updated</div>
+                <div class="updated-realDate">12 Apr 2025 - 12:12</div>
+              </div>
+            </div>
+            <hr>
+            <div class="lower-details">
+              <div>Lastcall: <span>--/--/--</span></div>
+              <div>Date: <span>--/--/--</span></div>
+              <div>Time: <span>--/--</span></div>
+              <div>Hallway: <span>-----</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Popup Overlay 3333 -->
+      <div id="popupOverlay3" class="popup-overlay" style="display: none;">
+        <div class="popup-box">
+          <!-- You can style this part as you like -->
+          <div class="popUP-upper">
+            <div class="up-left-popup">
+              <div class="course-code-popup">SE101</div>
+              <div class="course-name-popup">Software Project Managment</div>
+              <div class="course-prof-popup">Prof. Kristin</div>
+            </div>
+            <div class="up-right-popup">
+              <div>Credits: 4</div>
+              <div>ECTS: 6</div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="popUp-Mid">
+
+            <div class="mid-lists">
+              <div class="mid-left" >Final exam marks</div>
+                <div class="mid-right">
+                <div class="mid-letters">AA</div>
+                  <div class="mid-perc">95</div>
+            </div>
+            </div>
+        </div>
+      </div>
+      </div>
+
+
+
+      <!-- Popup Overlay444 -->
+      <div id="popupOverlay4" class="popup-overlay" style="display: none;">
+        <div class="popup-box">
+          <!-- You can style this part as you like -->
+          <div class="popUP-upper">
+            <div class="up-left-popup">
+              <div class="course-code-popup">SE101</div>
+              <div class="course-name-popup">Software Project Managment</div>
+              <div class="course-prof-popup">Prof. Kristin</div>
+            </div>
+            <div class="up-right-popup">
+              <div>Credits: 4</div>
+              <div>ECTS: 6</div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="popUp-Mid">
+
+            <div class="mid-lists">
+              <div class="mid-left" >Final exam marks</div>
+                <div class="mid-right">
+                <div class="mid-letters">--</div>
+                  <div class="mid-perc">--</div>
+            </div>
+            </div>
+
+            <div class="mid-lists">
+              <div class="mid-left" >Overall Average</div>
+              <div class="mid-right">
+                <div class="mid-letters">--</div>
+                <div class="mid-perc">--</div>
+              </div>
+            </div>
+          
+        </div>
+
+
+
+          <div class="popUp-lower">
+            <div class="lower-heading">
+              <div>
+                <div class="first-title">Upcoming</div>
+              <div class="second-title">Make-up exam</div>
+              </div>
+              <div class="update-date">
+                <div class="updated-date-text">Last updated</div>
+                <div class="updated-realDate">12 Apr 2025 - 12:12</div>
+              </div>
+            </div>
+            <hr>
+            <div class="lower-details">
+              <div>Lastcall: <span>--/--/--</span></div>
+              <div>Date: <span>--/--/--</span></div>
+              <div>Time: <span>--/--</span></div>
+              <div>Hallway: <span>-----</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
       <div class="notifications-container">
         <div class="notification-title">Notifications</div>
@@ -244,4 +516,6 @@
         
 </body>
 <script src="JavaSript/St-Home-Scripts.js"></script>
+<script src="/JavaSript/St-popups.js"></script>
+<script src="JavaSript/St-Profile.js"></script>
 </html>
